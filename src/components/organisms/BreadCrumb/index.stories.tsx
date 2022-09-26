@@ -12,7 +12,7 @@ const Template: Story<BreadCrumbType> = (args) => <BreadCrumb {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  crums: [
+  crumbs: [
     {
       label: '文房具の一覧',
       url: '/文房具',

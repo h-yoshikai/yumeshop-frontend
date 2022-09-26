@@ -4,7 +4,7 @@ import { colors, fonts, fontSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
 
 export type BreadCrumbType = {
-  crums: CrumbType[];
+  crumbs: CrumbType[];
 };
 
 const Wrapper = styled.ol`
@@ -20,16 +20,20 @@ const Wrapper = styled.ol`
 `;
 
 export const BreadCrumb: FC<BreadCrumbType> = (props) => {
-  const { crums } = props;
+  const { crumbs } = props;
 
   return (
     <nav>
       <Wrapper>
         <Crumb label="TOP" url="/" isActive={false} />
-        {crums.map((crum) => (
+        {crumbs.map((crumb) => (
           <>
             &gt;
-            <Crumb label={crum.label} url={crum.url} isActive={crum.isActive} />
+            <Crumb
+              label={crumb.label}
+              url={crumb.url}
+              isActive={crumb.isActive}
+            />
           </>
         ))}
       </Wrapper>
