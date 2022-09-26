@@ -12,7 +12,14 @@ const Template: Story<CrumbType> = (args) => <Crumb {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Top',
+  label: 'TOP',
   url: '/',
   isActive: false,
+};
+
+export const Active = Template.bind({});
+Active.args = {
+  label: 'シャープペンシル',
+  url: '',
+  isActive: true,
 };
