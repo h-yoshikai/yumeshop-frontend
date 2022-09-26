@@ -9,19 +9,22 @@ export type CrumbType = {
   isActive: boolean;
 };
 
-const Wrapper = styled.li`
+const Wrapper = styled.li<Pick<CrumbType, 'isActive'>>`
   display: inline-block;
-  padding: 0px 4px;
+  padding: 8px;
   font: ${fonts.NotoSansJP};
   font-size: ${fontSizes.fontSize12};
-  background-color: ${colors.White};
+  background-color: ${(props) => (!props.isActive ? colors.White : '')};
   text-align: center;
+  box-shadow: ${(props) =>
+    !props.isActive ? '0px 1px 4px rgba(0, 0, 0, 0.25)' : ''};
+  border-radius: 4px;
 `;
 
 export const Crumb: FC<CrumbType> = (props) => {
   const { label, url, isActive } = props;
   return (
-    <Wrapper>
+    <Wrapper isActive={isActive}>
       {isActive ? (
         <Link href={url} passHref>
           <span>{label}</span>
