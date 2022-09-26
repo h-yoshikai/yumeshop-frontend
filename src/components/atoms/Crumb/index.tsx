@@ -6,6 +6,7 @@ import styled from 'styled-components';
 export type CrumbType = {
   label: string;
   url: string;
+  /* 現在のページであるか */
   isActive: boolean;
 };
 
