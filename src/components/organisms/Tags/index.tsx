@@ -3,17 +3,20 @@ import { Tag } from 'src/components/atoms/Tag';
 import { spacingSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
 
+type Tag = {
+  id: string;
+  name: string;
+  color: string;
+  tag_group: string;
+};
+
 export type TagsProps = {
-  tags: {
-    id: string;
-    name: string;
-    color: string;
-    tag_group: string;
-  }[];
+  tags: Tag[];
 };
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: ${spacingSizes.xxs};
 `;
 
