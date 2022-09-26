@@ -20,7 +20,7 @@ Default.args = {
     },
     {
       label: 'シャープペンシル',
-      url: '/シャープペンシル',
+      url: '',
       isActive: true,
     },
   ],
