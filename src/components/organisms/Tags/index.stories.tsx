@@ -10,8 +10,8 @@ export default {
 
 const Template: Story<TagsProps> = (args) => <Tags {...args} />;
 
-export const NewProduct = Template.bind({});
-NewProduct.args = {
+export const DefaultTags = Template.bind({});
+DefaultTags.args = {
   tags: [
     {
       id: 'f2a63298-408b-41c0-b135-08bf15c2e66e',
