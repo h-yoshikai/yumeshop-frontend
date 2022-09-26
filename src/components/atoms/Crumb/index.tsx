@@ -27,7 +27,7 @@ export const Crumb: FC<CrumbType> = (props) => {
     <Wrapper isActive={isActive}>
       {isActive ? (
         <Link href={url} passHref>
-          <span>{label}</span>
+          <a href={url}>{label}</a>
         </Link>
       ) : (
         <span>{label}</span>
