@@ -1,14 +1,14 @@
 import React from 'react';
 
 import type { Meta, Story } from '@storybook/react/types-6-0';
-import { BreadCrumb, BreadCrumbType } from './index';
+import { Breadcrumb, BreadcrumbType } from './index';
 
 export default {
-  component: BreadCrumb,
+  component: Breadcrumb,
   title: 'organisms/BreadCrumb',
 } as Meta;
 
-const Template: Story<BreadCrumbType> = (args) => <BreadCrumb {...args} />;
+const Template: Story<BreadcrumbType> = (args) => <Breadcrumb {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

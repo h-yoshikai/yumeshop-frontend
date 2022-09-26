@@ -3,7 +3,7 @@ import { Crumb, CrumbType } from 'src/components/atoms/Crumb';
 import { colors, fonts, fontSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
 
-export type BreadCrumbType = {
+export type BreadcrumbType = {
   crumbs: CrumbType[];
 };
 
@@ -19,7 +19,7 @@ const Wrapper = styled.ol`
   box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
 `;
 
-export const BreadCrumb: FC<BreadCrumbType> = (props) => {
+export const Breadcrumb: FC<BreadcrumbType> = (props) => {
   const { crumbs } = props;
 
   return (
