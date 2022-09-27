@@ -6,6 +6,11 @@ import 'swiper/swiper.min.css';
 import Image from 'next/image';
 import styled from 'styled-components';
 import { colors } from 'src/styles/Tokens';
+import { FC } from 'react';
+
+export type CarouselType = {
+  images: string[];
+};
 
 const Wrapper = styled(Swiper)`
   max-width: 375px;
@@ -20,39 +25,30 @@ const Wrapper = styled(Swiper)`
   }
 `;
 
-export const Carousel = () => (
-  <Wrapper modules={[Navigation, Pagination]} pagination={{ clickable: true }}>
-    <SwiperSlide>
-      <Image
-        src="http://placehold.jp/700x400.png?text=1"
-        alt=""
-        width="375px"
-        height="375px"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <Image
-        src="http://placehold.jp/700x400.png?text=2"
-        alt=""
-        width="375px"
-        height="375px"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <Image
-        src="http://placehold.jp/700x400.png?text=3"
-        alt=""
-        width="375px"
-        height="375px"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <Image
-        src="http://placehold.jp/700x400.png?text=4"
-        alt=""
-        width="375px"
-        height="375px"
-      />
-    </SwiperSlide>
-  </Wrapper>
-);
+export const Carousel: FC<CarouselType> = (props) => {
+  const { images } = props;
+
+  return (
+    <Wrapper
+      modules={[Navigation, Pagination]}
+      pagination={{ clickable: true }}
+    >
+      {images.length !== 0 ? (
+        images.map((image) => (
+          <SwiperSlide>
+            <Image src={image} alt="" width="375px" height="375px" />
+          </SwiperSlide>
+        ))
+      ) : (
+        <SwiperSlide>
+          <Image
+            src="/placeholder-image.png"
+            alt=""
+            width="375px"
+            height="375px"
+          />
+        </SwiperSlide>
+      )}
+    </Wrapper>
+  );
+};
