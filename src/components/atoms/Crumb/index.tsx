@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FC, ReactNode } from 'react';
 import { colors, fonts, fontSizes } from 'src/styles/Tokens';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export type CrumbType = {
   children: ReactNode;
@@ -21,9 +21,12 @@ const Wrapper = styled.li<Pick<CrumbType, 'isActive'>>`
     !props.isActive ? '0px 1px 4px rgba(0, 0, 0, 0.25)' : ''};
   border-radius: 4px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /* min-width: min-content; */
+  ${(props) =>
+    props.isActive &&
+    css`
+      overflow: hidden;
+      text-overflow: ellipsis;
+    `}
 `;
 
 export const Crumb: FC<CrumbType> = (props) => {
