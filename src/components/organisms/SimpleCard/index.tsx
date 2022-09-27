@@ -27,7 +27,12 @@ export const SimpleCard: FC<SimpleCardType> = (props) => {
 
   return (
     <Wrapper>
-      <Image src={imageUrl} alt={description} width="200px" height="200px" />
+      <Image
+        src={imageUrl || '/placeholder-image.png'}
+        alt={description}
+        width="200px"
+        height="200px"
+      />
       <TextWrapper>{description}</TextWrapper>
     </Wrapper>
   );

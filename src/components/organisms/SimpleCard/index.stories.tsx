@@ -16,3 +16,10 @@ Default.args = {
   description:
     'テキストテキストテキストテキストテキストテキストテキストテキスト',
 };
+
+export const NoImage = Template.bind({});
+NoImage.args = {
+  imageUrl: '',
+  description:
+    'テキストテキストテキストテキストテキストテキストテキストテキスト',
+};
