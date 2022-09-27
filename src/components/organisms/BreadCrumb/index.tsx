@@ -12,7 +12,7 @@ const Wrapper = styled.ol`
   align-items: center;
   gap: 8px;
   padding: 4px 8px;
-  font: ${fonts.NotoSansJP};
+  font-family: ${fonts.NotoSansJP};
   font-size: ${fontSizes.fontSize12};
   background-color: ${colors.YumeWhiteGreen2};
   text-align: center;

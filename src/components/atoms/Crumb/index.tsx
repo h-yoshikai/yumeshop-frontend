@@ -13,7 +13,7 @@ export type CrumbType = {
 const Wrapper = styled.li<Pick<CrumbType, 'isActive'>>`
   display: inline-block;
   padding: 8px;
-  font: ${fonts.NotoSansJP};
+  font-family: ${fonts.NotoSansJP};
   font-size: ${fontSizes.fontSize12};
   background-color: ${(props) => (!props.isActive ? colors.White : '')};
   text-align: center;
