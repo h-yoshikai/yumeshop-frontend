@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, Fragment } from 'react';
 import { Crumb } from 'src/components/atoms/Crumb';
 import { colors, fonts, fontSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
@@ -36,12 +36,12 @@ export const Breadcrumb: FC<BreadcrumbType> = (props) => {
           TOP
         </Crumb>
         {crumbs.map((crumb) => (
-          <>
+          <Fragment key={crumb.label}>
             &gt;
-            <Crumb key={crumb.label} url={crumb.url} isActive={crumb.isActive}>
+            <Crumb url={crumb.url} isActive={crumb.isActive}>
               {crumb.label}
             </Crumb>
-          </>
+          </Fragment>
         ))}
       </Wrapper>
     </nav>
