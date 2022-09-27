@@ -19,7 +19,6 @@ Default.args = {
 
 export const NoImage = Template.bind({});
 NoImage.args = {
-  imageUrl: '',
   description:
     'テキストテキストテキストテキストテキストテキストテキストテキスト',
 };

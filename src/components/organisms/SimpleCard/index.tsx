@@ -4,7 +4,7 @@ import { fonts, fontSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
 
 export type SimpleCardType = {
-  imageUrl: string;
+  imageUrl?: string;
   description: string;
 };
 
