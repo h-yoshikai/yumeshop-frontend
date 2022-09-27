@@ -31,7 +31,7 @@ export const Crumb: FC<CrumbType> = (props) => {
           <a href={url}>{label}</a>
         </Link>
       ) : (
-        <span>{label}</span>
+        label
       )}
     </Wrapper>
   );
