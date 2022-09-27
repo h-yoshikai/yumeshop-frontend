@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots atoms/Crumb Active 1`] = `
+<li
+  className="Crumb__Wrapper-sc-1lwe4jr-0 bKMbPH"
+>
+  シャープペンシル
+</li>
+`;
+
+exports[`Storyshots atoms/Crumb Default 1`] = `
+<li
+  className="Crumb__Wrapper-sc-1lwe4jr-0 bfrDXc"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    TOP
+  </a>
+</li>
+`;
+
 exports[`Storyshots atoms/Headline Large 1`] = `
 <h1>
   Headline
@@ -75,7 +97,7 @@ exports[`Storyshots atoms/Logo Logo 1`] = `
 
 exports[`Storyshots atoms/Tag Limited Time 1`] = `
 <div
-  className="Tag__Wrapper-sc-14oc89a-0 cBNnBw"
+  className="Tag__Wrapper-sc-14oc89a-0 jLOTaj"
   color="red"
 >
   期間限定
@@ -84,7 +106,7 @@ exports[`Storyshots atoms/Tag Limited Time 1`] = `
 
 exports[`Storyshots atoms/Tag New Product 1`] = `
 <div
-  className="Tag__Wrapper-sc-14oc89a-0 iLUrlv"
+  className="Tag__Wrapper-sc-14oc89a-0 gqzqwc"
   color="orange"
 >
   新商品
@@ -93,11 +115,49 @@ exports[`Storyshots atoms/Tag New Product 1`] = `
 
 exports[`Storyshots atoms/Tag Special Price 1`] = `
 <div
-  className="Tag__Wrapper-sc-14oc89a-0 kGJJXg"
+  className="Tag__Wrapper-sc-14oc89a-0 eyfAQP"
   color="green"
 >
   特別価格
 </div>
+`;
+
+exports[`Storyshots organisms/BreadCrumb Default 1`] = `
+<nav>
+  <ol
+    className="BreadCrumb__Wrapper-sc-1t0laba-0 bZIlJc"
+  >
+    <li
+      className="Crumb__Wrapper-sc-1lwe4jr-0 bfrDXc"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        TOP
+      </a>
+    </li>
+    &gt;
+    <li
+      className="Crumb__Wrapper-sc-1lwe4jr-0 bfrDXc"
+    >
+      <a
+        href="/stationary"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        文房具の一覧
+      </a>
+    </li>
+    &gt;
+    <li
+      className="Crumb__Wrapper-sc-1lwe4jr-0 bKMbPH"
+    >
+      シャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシル
+    </li>
+  </ol>
+</nav>
 `;
 
 exports[`Storyshots organisms/Footer Footer 1`] = `
@@ -179,7 +239,7 @@ exports[`Storyshots organisms/Header Header 1`] = `
 
 exports[`Storyshots organisms/SimpleCard Default 1`] = `
 <div
-  className="SimpleCard__Wrapper-sc-1gwcgry-0 khTUPV"
+  className="SimpleCard__Wrapper-sc-1gwcgry-0 fUglWO"
 >
   <span
     style={
@@ -268,7 +328,7 @@ exports[`Storyshots organisms/SimpleCard Default 1`] = `
         data-nimg="intrinsic"
         decoding="async"
         loading="lazy"
-        src="https://picsum.photos/300/200"
+        src="https://picsum.photos/id/1/300/200"
         style={
           Object {
             "border": "none",
@@ -304,7 +364,7 @@ exports[`Storyshots organisms/SimpleCard Default 1`] = `
 
 exports[`Storyshots organisms/SimpleCard No Image 1`] = `
 <div
-  className="SimpleCard__Wrapper-sc-1gwcgry-0 khTUPV"
+  className="SimpleCard__Wrapper-sc-1gwcgry-0 fUglWO"
 >
   <span
     style={
@@ -432,19 +492,19 @@ exports[`Storyshots organisms/Tags Default Tags 1`] = `
   className="Tags__Wrapper-sc-11lxlza-0 gbTyzV"
 >
   <div
-    className="Tag__Wrapper-sc-14oc89a-0 iLUrlv"
+    className="Tag__Wrapper-sc-14oc89a-0 gqzqwc"
     color="orange"
   >
     新商品
   </div>
   <div
-    className="Tag__Wrapper-sc-14oc89a-0 cBNnBw"
+    className="Tag__Wrapper-sc-14oc89a-0 jLOTaj"
     color="red"
   >
     期間限定
   </div>
   <div
-    className="Tag__Wrapper-sc-14oc89a-0 kGJJXg"
+    className="Tag__Wrapper-sc-14oc89a-0 eyfAQP"
     color="green"
   >
     特別価格
