@@ -10,7 +10,7 @@ export type TagProps = {
 const Wrapper = styled.div<Pick<TagProps, 'color'>>`
   display: inline-block;
   padding: 0px 4px;
-  font: ${fonts.NotoSansJP};
+  font-family: ${fonts.NotoSansJP};
   font-size: ${fontSizes.fontSize12};
   color: ${colors.White};
   background-color: ${(props) => props.color};
