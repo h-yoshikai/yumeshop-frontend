@@ -30,6 +30,7 @@ export const Breadcrumb: FC<BreadcrumbType> = (props) => {
           <>
             &gt;
             <Crumb
+              key={crumb.label}
               label={crumb.label}
               url={crumb.url}
               isActive={crumb.isActive}
