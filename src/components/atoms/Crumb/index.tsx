@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 export type CrumbType = {
   children: ReactNode;
   url: string;
-  /* 現在のページであるか */
+  /** 現在のページであるか */
   isActive: boolean;
 };
 
