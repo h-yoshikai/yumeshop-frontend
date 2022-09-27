@@ -12,7 +12,7 @@ const Template: Story<SimpleCardType> = (args) => <SimpleCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  imageUrl: 'https://picsum.photos/300/200',
+  imageUrl: 'https://picsum.photos/id/1/300/200',
   description:
     'テキストテキストテキストテキストテキストテキストテキストテキスト',
 };
