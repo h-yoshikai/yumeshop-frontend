@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import { colors, fonts, fontSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
 
 export type CrumbType = {
-  label: string;
+  children: ReactNode;
   url: string;
   /* 現在のページであるか */
   isActive: boolean;
@@ -23,15 +23,15 @@ const Wrapper = styled.li<Pick<CrumbType, 'isActive'>>`
 `;
 
 export const Crumb: FC<CrumbType> = (props) => {
-  const { label, url, isActive } = props;
+  const { children, url, isActive } = props;
   return (
     <Wrapper isActive={isActive}>
       {!isActive ? (
         <Link href={url} passHref>
-          <a href={url}>{label}</a>
+          <a href={url}>{children}</a>
         </Link>
       ) : (
-        label
+        children
       )}
     </Wrapper>
   );

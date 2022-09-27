@@ -1,7 +1,14 @@
 import { FC } from 'react';
-import { Crumb, CrumbType } from 'src/components/atoms/Crumb';
+import { Crumb } from 'src/components/atoms/Crumb';
 import { colors, fonts, fontSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
+
+type CrumbType = {
+  label: string;
+  url: string;
+  /* 現在のページであるか */
+  isActive: boolean;
+};
 
 export type BreadcrumbType = {
   crumbs: CrumbType[];
@@ -25,16 +32,15 @@ export const Breadcrumb: FC<BreadcrumbType> = (props) => {
   return (
     <nav>
       <Wrapper>
-        <Crumb label="TOP" url="/" isActive={false} />
+        <Crumb url="/" isActive={false}>
+          TOP
+        </Crumb>
         {crumbs.map((crumb) => (
           <>
             &gt;
-            <Crumb
-              key={crumb.label}
-              label={crumb.label}
-              url={crumb.url}
-              isActive={crumb.isActive}
-            />
+            <Crumb key={crumb.label} url={crumb.url} isActive={crumb.isActive}>
+              {crumb.label}
+            </Crumb>
           </>
         ))}
       </Wrapper>
