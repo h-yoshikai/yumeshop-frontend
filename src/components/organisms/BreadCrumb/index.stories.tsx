@@ -15,7 +15,7 @@ Default.args = {
   crumbs: [
     {
       label: '文房具の一覧',
-      url: '/文房具',
+      url: '/stationary',
       isActive: false,
     },
     {
