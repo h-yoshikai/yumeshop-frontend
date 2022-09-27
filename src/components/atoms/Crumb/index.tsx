@@ -20,6 +20,10 @@ const Wrapper = styled.li<Pick<CrumbType, 'isActive'>>`
   box-shadow: ${(props) =>
     !props.isActive ? '0px 1px 4px rgba(0, 0, 0, 0.25)' : ''};
   border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* min-width: min-content; */
 `;
 
 export const Crumb: FC<CrumbType> = (props) => {
