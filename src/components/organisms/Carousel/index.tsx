@@ -1,8 +1,6 @@
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.min.css';
 import Image from 'next/image';
 import styled from 'styled-components';
 import { colors } from 'src/styles/Tokens';
@@ -35,7 +33,7 @@ export const Carousel: FC<CarouselType> = (props) => {
     >
       {images.length !== 0 ? (
         images.map((image) => (
-          <SwiperSlide>
+          <SwiperSlide key={image}>
             <Image src={image} alt="" width="375px" height="375px" />
           </SwiperSlide>
         ))
