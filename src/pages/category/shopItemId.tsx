@@ -1,96 +1,110 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { Breadcrumb } from 'src/components/organisms/BreadCrumb';
 import { Carousel } from 'src/components/organisms/Carousel';
 import { SimpleCard } from 'src/components/organisms/SimpleCard';
 import { Tags } from 'src/components/organisms/Tags';
+import useSWR, { Fetcher } from 'swr';
 
 import { Container, List } from 'src/styles/Home';
+import { ShopItemDetailResponse } from 'src/types/schemas/ShopItemDetailResponse';
+import styled, { css } from 'styled-components';
+import { colors, fontSizes } from 'src/styles/Tokens';
 
-const ShopItemDetailPage: NextPage = () => (
-  <>
-    <Head>
-      <title>商品詳細ページ | Yumeshop</title>
-      <meta name="description" content="" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Breadcrumb
-      crumbs={[
-        {
-          label: '文房具の一覧',
-          url: '/stationary',
-          isActive: false,
-        },
-        {
-          label:
-            'シャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシル',
-          url: '',
-          isActive: true,
-        },
-      ]}
-    />
+const SmallWrapper = styled.span`
+  font-size: ${fontSizes.fontSize14};
+  color: ${colors.Gray};
+`;
 
-    <Container>
-      {/* <Main> */}
-      <h1>商品名</h1>
-      <div>
-        <Tags
-          tags={[
-            {
-              id: 'f2a63298-408b-41c0-b135-08bf15c2e66e',
-              name: '新商品',
-              color: 'orange',
-              tag_group: 'shop_item',
-            },
-            {
-              id: 'd77535c3-25f7-4fcd-94a7-9bd4e716c877',
-              name: '期間限定',
-              color: 'red',
-              tag_group: 'shop_item',
-            },
-            {
-              id: '0a0a7546-57d4-47a1-a17c-6e651e46cd1b',
-              name: '特別価格',
-              color: 'green',
-              tag_group: 'shop_item',
-            },
-          ]}
-        />
-        <div>税抜 720→360円</div>
-      </div>
-    </Container>
-    <Carousel
-      images={[
-        'http://placehold.jp/700x400.png?text=1',
-        'http://placehold.jp/700x400.png?text=2',
-        'http://placehold.jp/700x400.png?text=3',
-        'http://placehold.jp/700x400.png?text=4',
-      ]}
-    />
-    <Container>
-      <h2>この夏一番のキャッチコピー！</h2>
-      <p>
-        商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文
-      </p>
+const BigWrapper = styled.span`
+  font-size: ${fontSizes.fontSize24};
+`;
 
-      <h2>関連商品</h2>
-      <List>
-        <SimpleCard
-          imageUrl="https://picsum.photos/id/1/300/200"
-          description="テキストテキストテキストテキストテキストテキストテキストテキスト"
-        />
-        <SimpleCard
-          imageUrl="https://picsum.photos/id/2/300/200"
-          description="テキストテキストテキストテキストテキストテキストテキストテキスト"
-        />
-        <SimpleCard
-          imageUrl="https://picsum.photos/id/3/300/200"
-          description="テキストテキストテキストテキストテキストテキストテキストテキスト"
-        />
-      </List>
-      {/* </Main> */}
-    </Container>
-  </>
-);
+const RedWrapper = styled.div<Pick<ShopItemDetailResponse, 'price'>>`
+  ${(props) =>
+    props.price.discounted &&
+    css`
+      color: ${colors.Red};
+    `}
+`;
+
+const HStack = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+`;
+
+const ShopItemDetailPage: NextPage = () => {
+  const fetcher: Fetcher<ShopItemDetailResponse> = (url: string) =>
+    fetch(url).then((res) => res.json());
+  const router = useRouter();
+  const shopItemId = router.query.id;
+
+  const { data, error } = useSWR(
+    'http://localhost:3000/shop_items/4dfd9672-5633-4328-b104-832e2f18c2a7',
+    fetcher,
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+  return (
+    <>
+      <Head>
+        <title>{data.name} | Yumeshop</title>
+        <meta name="description" content="" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Breadcrumb
+        crumbs={[
+          {
+            label: data.categories[0].name,
+            url: `/${data.categories[0].id}`,
+            isActive: false,
+          },
+          {
+            label: data.name,
+            url: '',
+            isActive: true,
+          },
+        ]}
+      />
+
+      <Container>
+        {/* <Main> */}
+        <h1>{data?.name}</h1>
+        <HStack>
+          <Tags tags={data?.tags} />
+          <HStack>
+            税抜 <SmallWrapper>{data.price.original_price}→</SmallWrapper>
+            <RedWrapper price={data.price}>
+              <BigWrapper>{data.price.discount_amount}</BigWrapper>円
+            </RedWrapper>
+          </HStack>
+        </HStack>
+      </Container>
+      <Carousel images={data.images} />
+      <Container>
+        {data.details.map((detail) => (
+          <>
+            <h2>{detail.header}</h2>
+            <p>{detail.content}</p>
+          </>
+        ))}
+
+        <h2>関連商品</h2>
+        <List>
+          {data.related_shop_items?.map((related_shop_item) => (
+            <SimpleCard
+              imageUrl={related_shop_item.thumbnail}
+              description={related_shop_item.name}
+            />
+          ))}
+        </List>
+        {/* </Main> */}
+      </Container>
+    </>
+  );
+};
 
 export default ShopItemDetailPage;
