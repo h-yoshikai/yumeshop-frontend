@@ -5,10 +5,15 @@ import { Carousel } from 'src/components/organisms/Carousel';
 import { SimpleCard } from 'src/components/organisms/SimpleCard';
 import { Tags } from 'src/components/organisms/Tags';
 
-import { Container, Main } from 'src/styles/Home';
+import { Container } from 'src/styles/Home';
 
 const ShopItemDetailPage: NextPage = () => (
   <>
+    <Head>
+      <title>商品詳細ページ | Yumeshop</title>
+      <meta name="description" content="" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <Breadcrumb
       crumbs={[
         {
@@ -26,12 +31,6 @@ const ShopItemDetailPage: NextPage = () => (
     />
 
     <Container>
-      <Head>
-        <title>商品詳細ページ | Yumeshop</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       {/* <Main> */}
       <h1>商品名</h1>
       <div>
@@ -59,15 +58,16 @@ const ShopItemDetailPage: NextPage = () => (
         />
         <div>税抜 720→360円</div>
       </div>
-
-      <Carousel
-        images={[
-          'http://placehold.jp/700x400.png?text=1',
-          'http://placehold.jp/700x400.png?text=2',
-          'http://placehold.jp/700x400.png?text=3',
-          'http://placehold.jp/700x400.png?text=4',
-        ]}
-      />
+    </Container>
+    <Carousel
+      images={[
+        'http://placehold.jp/700x400.png?text=1',
+        'http://placehold.jp/700x400.png?text=2',
+        'http://placehold.jp/700x400.png?text=3',
+        'http://placehold.jp/700x400.png?text=4',
+      ]}
+    />
+    <Container>
       <h2>この夏一番のキャッチコピー！</h2>
       <p>
         商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文商品の説明文
