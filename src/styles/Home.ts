@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from './Tokens';
+import { colors, spacingSizes } from './Tokens';
 
 export const TokenTest = styled.div`
   background: ${colors.YumeGreen};
@@ -35,4 +35,10 @@ export const Title = styled.h1`
   a:active {
     text-decoration: underline;
   }
+`;
+
+export const List = styled.div`
+  display: flex;
+  overflow-x: scroll;
+  gap: ${spacingSizes.xs};
 `;

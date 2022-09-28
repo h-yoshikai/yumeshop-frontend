@@ -5,7 +5,7 @@ import { Carousel } from 'src/components/organisms/Carousel';
 import { SimpleCard } from 'src/components/organisms/SimpleCard';
 import { Tags } from 'src/components/organisms/Tags';
 
-import { Container } from 'src/styles/Home';
+import { Container, List } from 'src/styles/Home';
 
 const ShopItemDetailPage: NextPage = () => (
   <>
@@ -74,18 +74,20 @@ const ShopItemDetailPage: NextPage = () => (
       </p>
 
       <h2>関連商品</h2>
-      <SimpleCard
-        imageUrl="https://picsum.photos/id/1/300/200"
-        description="テキストテキストテキストテキストテキストテキストテキストテキスト"
-      />
-      <SimpleCard
-        imageUrl="https://picsum.photos/id/2/300/200"
-        description="テキストテキストテキストテキストテキストテキストテキストテキスト"
-      />
-      <SimpleCard
-        imageUrl="https://picsum.photos/id/3/300/200"
-        description="テキストテキストテキストテキストテキストテキストテキストテキスト"
-      />
+      <List>
+        <SimpleCard
+          imageUrl="https://picsum.photos/id/1/300/200"
+          description="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        />
+        <SimpleCard
+          imageUrl="https://picsum.photos/id/2/300/200"
+          description="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        />
+        <SimpleCard
+          imageUrl="https://picsum.photos/id/3/300/200"
+          description="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        />
+      </List>
       {/* </Main> */}
     </Container>
   </>

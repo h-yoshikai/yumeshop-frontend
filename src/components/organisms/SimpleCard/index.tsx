@@ -16,6 +16,7 @@ const Wrapper = styled.div`
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   width: 200px;
+  flex-shrink: 0;
 `;
 
 const TextWrapper = styled.div`
