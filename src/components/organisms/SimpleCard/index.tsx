@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FC } from 'react';
-import { fonts, fontSizes } from 'src/styles/Tokens';
+import { colors, fonts, fontSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
 
 export type SimpleCardType = {
@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 
 const TextWrapper = styled.div`
   padding: 4px 4px;
+  background: ${colors.White};
 `;
 
 export const SimpleCard: FC<SimpleCardType> = (props) => {

@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import { colors } from './Tokens';
 
 export const TokenTest = styled.div`
-  background: ${colors['YumeGreen']};
+  background: ${colors.YumeGreen};
 `;
 
 export const Container = styled.div`
   padding: 0 2rem;
+  background: ${colors.YumeWhiteGreen};
 `;
 
 export const Main = styled.main`
