@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots atoms/Crumb Active 1`] = `
+<li
+  className="Crumb__Wrapper-sc-1lwe4jr-0 bKMbPH"
+>
+  シャープペンシル
+</li>
+`;
+
+exports[`Storyshots atoms/Crumb Default 1`] = `
+<li
+  className="Crumb__Wrapper-sc-1lwe4jr-0 bfrDXc"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    TOP
+  </a>
+</li>
+`;
+
 exports[`Storyshots atoms/Headline Large 1`] = `
 <h1>
   Headline
@@ -75,7 +97,7 @@ exports[`Storyshots atoms/Logo Logo 1`] = `
 
 exports[`Storyshots atoms/Tag Limited Time 1`] = `
 <div
-  className="Tag__Wrapper-sc-14oc89a-0 cBNnBw"
+  className="Tag__Wrapper-sc-14oc89a-0 jLOTaj"
   color="red"
 >
   期間限定
@@ -84,7 +106,7 @@ exports[`Storyshots atoms/Tag Limited Time 1`] = `
 
 exports[`Storyshots atoms/Tag New Product 1`] = `
 <div
-  className="Tag__Wrapper-sc-14oc89a-0 iLUrlv"
+  className="Tag__Wrapper-sc-14oc89a-0 gqzqwc"
   color="orange"
 >
   新商品
@@ -93,10 +115,661 @@ exports[`Storyshots atoms/Tag New Product 1`] = `
 
 exports[`Storyshots atoms/Tag Special Price 1`] = `
 <div
-  className="Tag__Wrapper-sc-14oc89a-0 kGJJXg"
+  className="Tag__Wrapper-sc-14oc89a-0 eyfAQP"
   color="green"
 >
   特別価格
+</div>
+`;
+
+exports[`Storyshots organisms/BreadCrumb Default 1`] = `
+<nav>
+  <ol
+    className="BreadCrumb__Wrapper-sc-1t0laba-0 bZIlJc"
+  >
+    <li
+      className="Crumb__Wrapper-sc-1lwe4jr-0 bfrDXc"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        TOP
+      </a>
+    </li>
+    &gt;
+    <li
+      className="Crumb__Wrapper-sc-1lwe4jr-0 bfrDXc"
+    >
+      <a
+        href="/stationary"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        文房具の一覧
+      </a>
+    </li>
+    &gt;
+    <li
+      className="Crumb__Wrapper-sc-1lwe4jr-0 bKMbPH"
+    >
+      シャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシルシャープペンシル
+    </li>
+  </ol>
+</nav>
+`;
+
+exports[`Storyshots organisms/Carousel Default 1`] = `
+<div
+  className="swiper Carousel__Wrapper-sc-1ef5e4m-0 hVvDDZ"
+>
+  <div
+    className="swiper-wrapper"
+  >
+    <div
+      className="swiper-slide"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27375%27%20height=%27375%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt=""
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt=""
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="http://placehold.jp/700x400.png?text=1"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+    <div
+      className="swiper-slide"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27375%27%20height=%27375%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt=""
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt=""
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="http://placehold.jp/700x400.png?text=2"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+    <div
+      className="swiper-slide"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27375%27%20height=%27375%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt=""
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt=""
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="http://placehold.jp/700x400.png?text=3"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+    <div
+      className="swiper-slide"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27375%27%20height=%27375%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt=""
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt=""
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="http://placehold.jp/700x400.png?text=4"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+  </div>
+  <div
+    className="swiper-pagination"
+  />
+</div>
+`;
+
+exports[`Storyshots organisms/Carousel No Image 1`] = `
+<div
+  className="swiper Carousel__Wrapper-sc-1ef5e4m-0 hVvDDZ"
+>
+  <div
+    className="swiper-wrapper"
+  >
+    <div
+      className="swiper-slide"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27375%27%20height=%27375%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt=""
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt=""
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="/placeholder-image.png"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+  </div>
+  <div
+    className="swiper-pagination"
+  />
 </div>
 `;
 
@@ -177,24 +850,274 @@ exports[`Storyshots organisms/Header Header 1`] = `
 </header>
 `;
 
+exports[`Storyshots organisms/SimpleCard Default 1`] = `
+<div
+  className="SimpleCard__Wrapper-sc-1gwcgry-0 fUglWO"
+>
+  <span
+    style={
+      Object {
+        "background": "none",
+        "border": 0,
+        "boxSizing": "border-box",
+        "display": "inline-block",
+        "height": "initial",
+        "margin": 0,
+        "maxWidth": "100%",
+        "opacity": 1,
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "relative",
+        "width": "initial",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "padding": 0,
+          "width": "initial",
+        }
+      }
+    >
+      <img
+        alt=""
+        aria-hidden={true}
+        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27200%27/%3e"
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      />
+    </span>
+    <img
+      alt="テキストテキストテキストテキストテキストテキストテキストテキスト"
+      data-nimg="intrinsic"
+      decoding="async"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      style={
+        Object {
+          "border": "none",
+          "bottom": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": 0,
+          "left": 0,
+          "margin": "auto",
+          "maxHeight": "100%",
+          "maxWidth": "100%",
+          "minHeight": "100%",
+          "minWidth": "100%",
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "padding": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": 0,
+        }
+      }
+    />
+    <noscript>
+      <img
+        alt="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        data-nimg="intrinsic"
+        decoding="async"
+        loading="lazy"
+        src="https://picsum.photos/id/1/300/200"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+    </noscript>
+  </span>
+  <div
+    className="SimpleCard__TextWrapper-sc-1gwcgry-1 cXtfIo"
+  >
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/SimpleCard No Image 1`] = `
+<div
+  className="SimpleCard__Wrapper-sc-1gwcgry-0 fUglWO"
+>
+  <span
+    style={
+      Object {
+        "background": "none",
+        "border": 0,
+        "boxSizing": "border-box",
+        "display": "inline-block",
+        "height": "initial",
+        "margin": 0,
+        "maxWidth": "100%",
+        "opacity": 1,
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "relative",
+        "width": "initial",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "padding": 0,
+          "width": "initial",
+        }
+      }
+    >
+      <img
+        alt=""
+        aria-hidden={true}
+        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27200%27/%3e"
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      />
+    </span>
+    <img
+      alt="テキストテキストテキストテキストテキストテキストテキストテキスト"
+      data-nimg="intrinsic"
+      decoding="async"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      style={
+        Object {
+          "border": "none",
+          "bottom": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": 0,
+          "left": 0,
+          "margin": "auto",
+          "maxHeight": "100%",
+          "maxWidth": "100%",
+          "minHeight": "100%",
+          "minWidth": "100%",
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "padding": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": 0,
+        }
+      }
+    />
+    <noscript>
+      <img
+        alt="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        data-nimg="intrinsic"
+        decoding="async"
+        loading="lazy"
+        src="/placeholder-image.png"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+    </noscript>
+  </span>
+  <div
+    className="SimpleCard__TextWrapper-sc-1gwcgry-1 cXtfIo"
+  >
+    テキストテキストテキストテキストテキストテキストテキストテキスト
+  </div>
+</div>
+`;
+
 exports[`Storyshots organisms/Tags Default Tags 1`] = `
 <div
   className="Tags__Wrapper-sc-11lxlza-0 gbTyzV"
 >
   <div
-    className="Tag__Wrapper-sc-14oc89a-0 iLUrlv"
+    className="Tag__Wrapper-sc-14oc89a-0 gqzqwc"
     color="orange"
   >
     新商品
   </div>
   <div
-    className="Tag__Wrapper-sc-14oc89a-0 cBNnBw"
+    className="Tag__Wrapper-sc-14oc89a-0 jLOTaj"
     color="red"
   >
     期間限定
   </div>
   <div
-    className="Tag__Wrapper-sc-14oc89a-0 kGJJXg"
+    className="Tag__Wrapper-sc-14oc89a-0 eyfAQP"
     color="green"
   >
     特別価格
