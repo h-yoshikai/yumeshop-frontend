@@ -25,7 +25,7 @@ export type ShopItemDetailResponse = {
     },
   ];
   images: string[];
-  relatedShopItems: [
+  related_shop_items: [
     {
       id: string;
       name: string;
