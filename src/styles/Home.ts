@@ -6,7 +6,7 @@ export const TokenTest = styled.div`
 `;
 
 export const Container = styled.div`
-  padding: 0 2rem;
+  padding: 0 16px;
   background: ${colors.YumeWhiteGreen};
 `;
 
