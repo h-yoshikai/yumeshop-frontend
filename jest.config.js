@@ -15,7 +15,7 @@ module.exports = {
     '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
   },
   transformIgnorePatterns: [
-    '/node_modules/',
+    '/node_modules/(?!(swiper|ssr-window|dom7))',
     '^.+\\.module\\.(css|sass|scss)$',
   ],
   testEnvironment: 'jest-environment-jsdom',
