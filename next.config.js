@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["placehold.jp"]
+    domains: ["placehold.jp", "picsum.photos"]
   },
 }
