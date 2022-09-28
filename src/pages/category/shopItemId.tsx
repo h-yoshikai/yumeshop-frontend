@@ -11,6 +11,7 @@ import { Container, List } from 'src/styles/Home';
 import { ShopItemDetailResponse } from 'src/types/schemas/ShopItemDetailResponse';
 import styled, { css } from 'styled-components';
 import { colors, fontSizes } from 'src/styles/Tokens';
+import Link from 'next/link';
 
 const SmallWrapper = styled.span`
   font-size: ${fontSizes.fontSize14};
@@ -91,14 +92,23 @@ const ShopItemDetailPage: NextPage = () => {
             <p>{detail.content}</p>
           </>
         ))}
-
+      </Container>
+      <Container>
         <h2>関連商品</h2>
         <List>
           {data.related_shop_items?.map((related_shop_item) => (
+            // <Link
+            //   key={related_shop_item.id}
+            //   href={`/${data.categories[0].id}/${data.id}`}
+            //   passHref
+            // >
+            // <div onClick={router.push(`/${data.categories[0].id}/${data.id}`)}>
             <SimpleCard
               imageUrl={related_shop_item.thumbnail}
               description={related_shop_item.name}
             />
+            // </div>
+            // </Link>
           ))}
         </List>
         {/* </Main> */}
