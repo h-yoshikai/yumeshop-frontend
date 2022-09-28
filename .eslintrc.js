@@ -52,7 +52,8 @@ module.exports = {
       // devDependenciesのimportを許容
       devDependencies: true
     }],
-    'storybook/prefer-pascal-case': 'off'
+    'storybook/prefer-pascal-case': 'off',
+    'react/require-default-props': 'off'
   },
   overrides: [
     {
