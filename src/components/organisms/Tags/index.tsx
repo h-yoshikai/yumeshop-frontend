@@ -3,7 +3,7 @@ import { Tag } from 'src/components/atoms/Tag';
 import { spacingSizes } from 'src/styles/Tokens';
 import styled from 'styled-components';
 
-type Tag = {
+export type Tag = {
   id: string;
   name: string;
   color: string;
@@ -11,7 +11,7 @@ type Tag = {
 };
 
 export type TagsProps = {
-  tags: Tag[];
+  tags?: Tag[];
 };
 
 const Wrapper = styled.div`
@@ -25,7 +25,7 @@ export const Tags: FC<TagsProps> = (props) => {
 
   return (
     <Wrapper>
-      {tags.map((tag) => (
+      {tags?.map((tag) => (
         <Tag key={tag.id} label={tag.name} color={tag.color} />
       ))}
     </Wrapper>
